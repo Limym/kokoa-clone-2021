@@ -1,24 +1,29 @@
 #chat-screen {
-  background-color: #abc1d1;
-  height: 500vh;
-}
-
-#chat-screen .alt-header,
-#chat-screen .status-bar {
-  top: 0;
-  position: fixed;
-  width: 100%;
-  background-color: #abc1d1;
-  box-sizing: border-box;
-}
-
-#chat-screen .status-bar {
-  z-index: 2;
+  background-color: whitesmoke;
 }
 
 #chat-screen .alt-header {
+  top: 0;
+  width: 100%;
+  background-color: #466375;
+  box-sizing: border-box;
   top: 10px;
-  z-index: 1;
+  color: white;
+}
+
+#chat-screen .alt-header-2 {
+  background-color: #e99e9e;
+}
+
+.screen__img-chat {
+  width: 100vw;
+  height: 100%;
+  object-fit: contain;
+  top: 20px;
+  position: absolute;
+  z-index: -5;
+  opacity: 0.8;
+  position: fixed;
 }
 
 @keyframes fadeIn {
@@ -42,11 +47,15 @@
 
 .chat__timestamp {
   color: white;
-  background-color: #92a4b2;
+  background-color: rgba(95, 95, 95, 0.5);
   padding: 15px;
   font-size: 14px;
   border-radius: 25px;
   margin-bottom: 25px;
+  height: 30px;
+  text-align: center;
+  display: flex;
+  align-items: center;
 }
 
 .message-row {
@@ -55,21 +64,24 @@
   margin-bottom: 25px;
 }
 
-.message-row img {
+.message-row__avatar {
   width: 50px;
   height: 50px;
-  border-radius: 50%;
+  border-radius: 15px;
   margin-right: 10px;
+  object-fit: cover;
 }
 
 .message__author {
   margin-bottom: 5px;
   display: block;
+  color: white;
 }
 
 .message__info {
   display: flex;
   align-items: flex-end;
+  margin-bottom: 18px;
 }
 
 .message__bubble {
@@ -89,20 +101,31 @@
 
 .message-row--own {
   justify-content: flex-end;
+  flex-direction: column;
 }
 
 .message-row--own .message__bubble {
-  background-color: var(--yellow);
+  background-color: #466375;
   border-top-right-radius: 0px;
   border-top-left-radius: 15px;
   margin-right: 0px;
   margin-left: 5px;
+  color: white;
+}
+
+.message-row--own .message-row-color {
+  background-color: #e99e9e;
 }
 
 .message-row--own .message__info {
   flex-direction: row-reverse;
 }
 
+.cake__img {
+  width: 200px;
+  height: 300px;
+  object-fit: contain;
+}
 .reply {
   position: fixed;
   bottom: 0;

@@ -7,49 +7,80 @@
     <title>Friends - Kokoa Clone</title>
   </head>
   <body>
-    <div class="status-bar">
-      <div class="status-bar__column">
-        <span>No Service</span>
-        <i class="fas fa-wifi"></i>
+    <div class="fixed-bar">
+      <div class="status-bar">
+        <div class="status-bar__column">
+          <span>No Service</span>
+          <i class="fas fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+          <span>12:43</span>
+        </div>
+        <div class="status-bar__column">
+          <span>100%</span>
+          <i class="fas fa-battery-full fa-lg"></i>
+          <i class="fas fa-bolt"></i>
+        </div>
       </div>
-      <div class="status-bar__column">
-        <span>18:43</span>
-      </div>
-      <div class="status-bar__column">
-        <span>110%</span>
-        <i class="fas fa-battery-full fa-lg"></i>
-        <i class="fas fa-bolt"></i>
-      </div>
+
+      <header class="screen-header">
+        <h1 class="screen-header__title">Friends</h1>
+        <div class="screen-header__icons">
+          <span><i class="fas fa-search fa-lg"></i></span>
+          <span><i class="fas fa-music fa-lg"></i></span>
+          <span><i class="fas fa-cog fa-lg"></i></span>
+        </div>
+      </header>
     </div>
 
-    <header class="screen-header">
-      <h1 class="screen-header__title">Friends</h1>
-      <div class="screen-header__icons">
-        <span><i class="fas fa-search fa-lg"></i></span>
-        <span><i class="fas fa-music fa-lg"></i></span>
-        <span><i class="fas fa-cog fa-lg"></i></span>
-      </div>
-    </header>
-
-    <a id="friends-display-link">
+    <!--<a id="friends-display-link">
       <i class="fas fa-info-circle"></i> Friends' Names Display
       <i class="fas fa-chevron-right fa-xs"></i>
-    </a>
+    </a> -->
 
     <main class="friends-screen">
       <div class="user-component">
         <div class="user-component__column">
           <img
-            src="https://avatars3.githubusercontent.com/u/3612017"
+            src="photo/gaonasi.png"
             class="user-component__avatar user-component__avatar--xl"
           />
           <div class="user-component__text">
-            <h4 class="user-component__title">Nicolas</h4>
+            <h4 class="user-component__title">Me</h4>
             <!-- <h6 class="user-component__subtitle">this text whatever</h6> -->
           </div>
         </div>
         <div class="user-component__column"></div>
       </div>
+
+      <audio controls loop src="photo/Always With Me.mp3"></audio>
+
+      <div class="friends-screen__channel">
+        <div class="friends-screen__channel-header">
+          <span>Friends with Birthdays</span>
+          <i class="fas fa-chevron-up fa-xs"></i>
+        </div>
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              src="photo/haku.png"
+              class="user-component__avatar user-component__avatar--sm"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title user-component__title--not-bold">
+                Haku 🎂
+              </h4>
+            </div>
+          </div>
+          <div class="user-component__column">
+            <div>
+              <span>2</span>
+              <i class="fas fa-chevron-right fa-xs"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="friends-screen__channel">
         <div class="friends-screen__channel-header">
           <span>Channel</span>
@@ -58,12 +89,12 @@
         <div class="user-component">
           <div class="user-component__column">
             <img
-              src="https://avatars3.githubusercontent.com/u/3612017"
+              src="photo/hotspa.jpg"
               class="user-component__avatar user-component__avatar--sm"
             />
             <div class="user-component__text">
               <h4 class="user-component__title user-component__title--not-bold">
-                Channel
+                Spa
               </h4>
             </div>
           </div>
@@ -71,6 +102,26 @@
             <div>
               <span>2</span>
               <i class="fas fa-chevron-right fa-xs"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="friends-screen__channel">
+        <div class="friends-screen__channel-header">
+          <span>Friends 350</span>
+          <i class="fas fa-chevron-up fa-xs"></i>
+        </div>
+        <div class="user-component__friends">
+          <div class="user-component__friends">
+            <img
+              src="photo/sen.png"
+              class="user-component__avatar user-component__avatar--sm"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title user-component__title--not-bold">
+                Sen
+              </h4>
             </div>
           </div>
         </div>
@@ -86,7 +137,7 @@
         </li>
         <li class="nav__btn">
           <a class="nav__link" href="chats.html">
-            <span class="nav__notification badge">1</span>
+            <span class="nav__notification badge">8</span>
             <i class="far fa-comment fa-2x"></i>
           </a>
         </li>
@@ -107,8 +158,11 @@
     </div>
 
     <div id="no-mobile">
-      <span>Your screen is too big 😭</span>
+      <img src="photo/in.png" class="no-mobile-img" />
+      <span>Your screen is too big...</span>
     </div>
+
+    <img src="photo/two.jpg" class="screen_img" />
 
     <script
       src="https://kit.fontawesome.com/6478f529f2.js"

@@ -1,5 +1,13 @@
 .user-component {
   justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  color: white;
+  width: 100%;
+  height: 50px;
+}
+.user-component-chats {
+  height: 80px;
 }
 
 .user-component,
@@ -7,12 +15,16 @@
   display: flex;
   align-items: center;
 }
+.user-component__column:nth-child(2) {
+  padding-right: 5px;
+}
 
 .user-component__avatar {
   width: 70px;
   height: 70px;
   border-radius: 30px;
   margin-right: 20px;
+  object-fit: cover;
 }
 
 .user-component__title {
@@ -23,12 +35,12 @@
 .user-component__subtitle {
   margin-top: 8px;
   font-size: 17px;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 250, 250, 0.5);
 }
 
 .user-component__avatar--xl {
-  width: 80px;
-  height: 80px;
+  width: 75px;
+  height: 75px;
 }
 
 .user-component__avatar--sm {
@@ -42,7 +54,7 @@
 }
 
 .user-component__column:last-child {
-  color: rgba(0, 0, 0, 0.4);
+  color: white;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -51,4 +63,14 @@
 .user-component__time {
   margin-bottom: 10px;
   display: block;
+}
+
+.user-component__friends {
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  color: white;
+  width: 100%;
+  height: 50px;
 }

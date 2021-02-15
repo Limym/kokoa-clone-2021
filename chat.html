@@ -7,54 +7,85 @@
     <title>Chat w/ Nico - Kokoa Clone</title>
   </head>
   <body id="chat-screen">
-    <div class="status-bar">
-      <div class="status-bar__column">
-        <span>No Service</span>
-        <i class="fas fa-wifi"></i>
+    <div class="fixed-bar">
+      <div class="status-bar">
+        <div class="status-bar__column">
+          <span>No Service</span>
+          <i class="fas fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+          <span>12:43</span>
+        </div>
+        <div class="status-bar__column">
+          <span>100%</span>
+          <i class="fas fa-battery-full fa-lg"></i>
+          <i class="fas fa-bolt"></i>
+        </div>
       </div>
-      <div class="status-bar__column">
-        <span>18:43</span>
-      </div>
-      <div class="status-bar__column">
-        <span>110%</span>
-        <i class="fas fa-battery-full fa-lg"></i>
-        <i class="fas fa-bolt"></i>
-      </div>
+      <header class="alt-header">
+        <div class="alt-header__column">
+          <a href="chats.html">
+            <i class="fas fa-angle-left fa-3x"></i>
+          </a>
+        </div>
+        <div class="alt-header__column">
+          <h1 class="alt-header__title">Haku</h1>
+        </div>
+        <div class="alt-header__column">
+          <span><i class="fas fa-search fa-lg"></i></span>
+          <span><i class="fas fa-bars fa-lg"></i></span>
+        </div>
+      </header>
     </div>
-    <header class="alt-header">
-      <div class="alt-header__column">
-        <a href="chats.html">
-          <i class="fas fa-angle-left fa-3x"></i>
-        </a>
-      </div>
-      <div class="alt-header__column">
-        <h1 class="alt-header__title">니꼬</h1>
-      </div>
-      <div class="alt-header__column">
-        <span><i class="fas fa-search fa-lg"></i></span>
-        <span><i class="fas fa-bars fa-lg"></i></span>
-      </div>
-    </header>
-
+    <img src="photo/dragon.png" class="screen__img-chat" />
     <main class="main-screen main-chat">
-      <div class="chat__timestamp">Tuesday, June 30, 2020</div>
+      <div class="chat__timestamp">Friday, February 12, 2021</div>
 
       <div class="message-row">
-        <img src="https://avatars3.githubusercontent.com/u/3612017" />
+        <img src="photo/haku.png" class="message-row__avatar" />
         <div class="message-row__content">
-          <span class="message__author">Nicolas</span>
+          <span class="message__author">Haku</span>
           <div class="message__info">
-            <span class="message__bubble">Hi!</span>
-            <span class="message__time">21:27</span>
+            <span class="message__bubble">Ok, see you there!</span>
+            <span class="message__time">13:15</span>
           </div>
         </div>
       </div>
 
+      <div class="chat__timestamp">Sunday, February 14, 2021</div>
+
       <div class="message-row message-row--own">
         <div class="message-row__content">
           <div class="message__info">
-            <span class="message__bubble">Hi nice to meet you!</span>
-            <span class="message__time">21:27</span>
+            <span class="message__bubble">Happy birthday🎉🎉!</span>
+            <span class="message__time">12:05</span>
+          </div>
+        </div>
+
+        <div class="message-row__content">
+          <div class="message__info">
+            <span class="message__bubble">
+              <img src="photo/cake.jpg" class="cake__img" />
+            </span>
+            <span class="message__time">12:06</span>
+          </div>
+        </div>
+
+        <div class="message-row__content">
+          <div class="message__info">
+            <span class="message__bubble">Have a happy day!</span>
+            <span class="message__time">12:06</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="message-row">
+        <img src="photo/haku.png" class="message-row__avatar" />
+        <div class="message-row__content">
+          <span class="message__author">Haku</span>
+          <div class="message__info">
+            <span class="message__bubble">Thank you!</span>
+            <span class="message__time">12:08</span>
           </div>
         </div>
       </div>
@@ -74,7 +105,8 @@
     </form>
 
     <div id="no-mobile">
-      <span>Your screen is too big ㅠㅠ</span>
+      <img src="photo/in.png" class="no-mobile-img" />
+      <span>Your screen is too big...</span>
     </div>
 
     <script

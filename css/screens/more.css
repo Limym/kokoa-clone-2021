@@ -1,11 +1,22 @@
 .more-screen .icon-row {
   margin-top: 35px;
 }
+.more-screen .icon-row__icon {
+  width: 85px;
+  height: 85px;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  color: whitesmoke;
+}
 
 .more-suggestions {
   margin-top: 50px;
-  border-top: var(--main-border);
+  border-top: 1px solid rgba(245, 245, 245, 0.705);
   padding-top: 40px;
+  color: white;
 }
 
 .more-suggestions__title {

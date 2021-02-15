@@ -1,16 +1,17 @@
 .alt-header {
-  padding: var(--horizontal-space);
-  margin-bottom: 15px;
+  padding: 15px 25px 15px 25px;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: white;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 .alt-header__column {
   width: 33%;
 }
 
 .alt-header__title {
-  font-size: 28px;
+  font-size: 25px;
   font-weight: 600;
 }
 
